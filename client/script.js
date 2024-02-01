@@ -12,7 +12,7 @@ function loader(element) {
   loadInterval = setInterval(() => {
     element.textContent += '..';
 
-    if (element.textContent === 'ASPRI siap melayani, silahkan bertanya.....'){
+    if (element.textContent === 'ASPRI Sedang berpikir.....'){
       element.textContent='ASPRI Sedang berpikir';
     }
   }, 300)
