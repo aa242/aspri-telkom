@@ -110,7 +110,7 @@ const handleSubmit = async (e) => {
   } else {
     const err = await response.text();
 
-    messageDiv.innerHTML = 'ASN Profiling AI Assistant has Error....';
+    messageDiv.innerHTML = 'ASPRI sedang Error....';
 
     alert(err)
   }
