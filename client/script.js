@@ -7,13 +7,13 @@ const chatContainer = document.querySelector('#chat_container');
 let loadInterval;
 
 function loader(element) {
-  element.textContent='ASN Profiling AI Assistant is thinking';
+  element.textContent='ASPRI Sedang berpikir';
   
   loadInterval = setInterval(() => {
     element.textContent += '..';
 
-    if (element.textContent === 'ASN Profiling AI Assistant is thinking..........'){
-      element.textContent='ASN Profiling AI Assistant is thinking';
+    if (element.textContent === 'ASPRI siapa melayani, silahkan bertanya.....'){
+      element.textContent='ASPRI Sedang berpikir';
     }
   }, 300)
 }
@@ -84,7 +84,7 @@ const handleSubmit = async (e) => {
   // fetch data from server -> bot's response
 
   
-  const response = await fetch('http://localhost:5000', {
+  const response = await fetch('https://aspri-telkom.onrender.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
