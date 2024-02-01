@@ -7,13 +7,13 @@ const chatContainer = document.querySelector('#chat_container');
 let loadInterval;
 
 function loader(element) {
-  element.textContent='ASPRI Sedang berpikir';
+  element.textContent='ASPRI sedang berpikir';
   
   loadInterval = setInterval(() => {
     element.textContent += '..';
 
-    if (element.textContent === 'ASPRI Sedang berpikir.....'){
-      element.textContent='ASPRI Sedang berpikir';
+    if (element.textContent === 'ASPRI sedang berpikir......'){
+      element.textContent='ASPRI sedang berpikir';
     }
   }, 300)
 }
